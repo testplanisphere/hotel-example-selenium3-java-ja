@@ -17,7 +17,7 @@ public class PlansPage {
   public PlansPage(WebDriver driver) {
     this.driver = driver;
     this.wait = new WebDriverWait(driver, 10);
-    if (!this.driver.getTitle().equals("宿泊プラン一覧 | STAR HOTEL - テスト自動化デモサイト")) {
+    if (!this.driver.getTitle().startsWith("宿泊プラン一覧")) {
       throw new IllegalStateException("現在のページが間違っています: " + this.driver.getTitle());
     }
   }

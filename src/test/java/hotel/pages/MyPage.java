@@ -10,7 +10,7 @@ public class MyPage {
 
   public MyPage(WebDriver driver) {
     this.driver = driver;
-    if (!this.driver.getTitle().equals("マイページ | STAR HOTEL - テスト自動化デモサイト")) {
+    if (!this.driver.getTitle().startsWith("マイページ")) {
       throw new IllegalStateException("現在のページが間違っています: " + this.driver.getTitle());
     }
   }

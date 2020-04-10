@@ -9,7 +9,7 @@ public class LoginPage {
 
   public LoginPage(WebDriver driver) {
     this.driver = driver;
-    if (!this.driver.getTitle().equals("ログイン | STAR HOTEL - テスト自動化デモサイト")) {
+    if (!this.driver.getTitle().startsWith("ログイン")) {
       throw new IllegalStateException("現在のページが間違っています: " + this.driver.getTitle());
     }
   }

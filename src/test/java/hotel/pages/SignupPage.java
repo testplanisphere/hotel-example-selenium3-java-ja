@@ -28,7 +28,7 @@ public class SignupPage {
 
   public SignupPage(WebDriver driver) {
     this.driver = driver;
-    if (!this.driver.getTitle().equals("会員登録 | STAR HOTEL - テスト自動化デモサイト")) {
+    if (!this.driver.getTitle().startsWith("会員登録")) {
       throw new IllegalStateException("現在のページが間違っています: " + this.driver.getTitle());
     }
   }

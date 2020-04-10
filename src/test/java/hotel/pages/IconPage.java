@@ -12,7 +12,7 @@ public class IconPage {
 
   public IconPage(WebDriver driver) {
     this.driver = driver;
-    if (!this.driver.getTitle().equals("アイコン設定 | STAR HOTEL - テスト自動化デモサイト")) {
+    if (!this.driver.getTitle().startsWith("アイコン設定")) {
       throw new IllegalStateException("現在のページが間違っています: " + this.driver.getTitle());
     }
   }

@@ -30,7 +30,7 @@ public class ReservePage {
   public ReservePage(WebDriver driver) {
     this.driver = driver;
     this.wait = new WebDriverWait(driver, 10);
-    if (!this.driver.getTitle().equals("宿泊予約 | STAR HOTEL - テスト自動化デモサイト")) {
+    if (!this.driver.getTitle().startsWith("宿泊予約")) {
       throw new IllegalStateException("現在のページが間違っています: " + this.driver.getTitle());
     }
   }
