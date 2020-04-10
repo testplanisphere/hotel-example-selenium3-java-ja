@@ -1,4 +1,4 @@
-package starhotel;
+package hotel;
 
 import java.util.ArrayList;
 import java.util.Collection;

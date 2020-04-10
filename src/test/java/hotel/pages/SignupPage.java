@@ -1,4 +1,4 @@
-package starhotel.pages;
+package hotel.pages;
 
 import java.time.LocalDate;
 import org.openqa.selenium.By;

@@ -1,4 +1,4 @@
-package starhotel.pages;
+package hotel.pages;
 
 import java.nio.file.Path;
 import org.openqa.selenium.By;

@@ -1,4 +1,4 @@
-package starhotel;
+package hotel;
 
 import static java.time.DayOfWeek.FRIDAY;
 import static java.time.DayOfWeek.SATURDAY;
@@ -7,9 +7,9 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static starhotel.Utils.BASE_URL;
-import static starhotel.Utils.getNewWindowHandle;
-import static starhotel.Utils.sleep;
+import static hotel.Utils.BASE_URL;
+import static hotel.Utils.getNewWindowHandle;
+import static hotel.Utils.sleep;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -25,10 +25,10 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import starhotel.pages.ReservePage;
-import starhotel.pages.ReservePage.Contact;
-import starhotel.pages.RoomPage;
-import starhotel.pages.TopPage;
+import hotel.pages.ReservePage;
+import hotel.pages.ReservePage.Contact;
+import hotel.pages.RoomPage;
+import hotel.pages.TopPage;
 
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("宿泊予約画面テスト")

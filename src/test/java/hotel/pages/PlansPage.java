@@ -1,4 +1,4 @@
-package starhotel.pages;
+package hotel.pages;
 
 import java.util.List;
 import java.util.stream.Collectors;

@@ -1,9 +1,9 @@
-package starhotel;
+package hotel;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static starhotel.Utils.BASE_URL;
+import static hotel.Utils.BASE_URL;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -21,9 +21,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.Colors;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import starhotel.pages.SignupPage.Gender;
-import starhotel.pages.SignupPage.Rank;
-import starhotel.pages.TopPage;
+import hotel.pages.SignupPage.Gender;
+import hotel.pages.SignupPage.Rank;
+import hotel.pages.TopPage;
 
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("マイページテスト")

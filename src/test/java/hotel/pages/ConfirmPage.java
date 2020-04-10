@@ -1,6 +1,6 @@
-package starhotel.pages;
+package hotel.pages;
 
-import static starhotel.Utils.sleep;
+import static hotel.Utils.sleep;
 
 import java.util.regex.Pattern;
 import org.openqa.selenium.By;

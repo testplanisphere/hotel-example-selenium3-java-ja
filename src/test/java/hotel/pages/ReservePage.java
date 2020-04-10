@@ -1,4 +1,4 @@
-package starhotel.pages;
+package hotel.pages;
 
 import java.util.regex.Pattern;
 import org.openqa.selenium.By;

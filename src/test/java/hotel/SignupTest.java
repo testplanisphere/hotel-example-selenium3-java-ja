@@ -1,8 +1,8 @@
-package starhotel;
+package hotel;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static starhotel.Utils.BASE_URL;
+import static hotel.Utils.BASE_URL;
 
 import java.time.LocalDate;
 import org.junit.jupiter.api.AfterAll;
@@ -14,9 +14,9 @@ import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.WebDriver;
-import starhotel.pages.SignupPage.Gender;
-import starhotel.pages.SignupPage.Rank;
-import starhotel.pages.TopPage;
+import hotel.pages.SignupPage.Gender;
+import hotel.pages.SignupPage.Rank;
+import hotel.pages.TopPage;
 
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("登録画面テスト")
