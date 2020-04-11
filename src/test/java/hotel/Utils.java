@@ -11,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Utils {
 
-  public static final String BASE_URL = "https://takeya0x86.github.io/automation-testing-practice";
+  public static final String BASE_URL = "https://hotel.testplanisphere.dev";
 
   private Utils() {
     throw new AssertionError();
