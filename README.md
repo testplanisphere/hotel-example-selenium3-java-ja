@@ -1,4 +1,8 @@
-## selenium3-java
+## hotel-example-selenium3-java
+
+### テスト対象サイト
+
+https://hotel.testplanisphere.dev/
 
 ### 概要
 
