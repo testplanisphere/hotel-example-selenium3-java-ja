@@ -55,3 +55,9 @@ gradlew.bat cleanTest test
 ```
 BROWSER=firefox ./gradlew cleanTest test
 ```
+
+### 変更履歴
+
+#### v1.0.0 (2020-04-14)
+
+* 正式リリース
