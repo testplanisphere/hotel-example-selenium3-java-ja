@@ -2,6 +2,8 @@ name: selenium3-java
 
 on:
   push:
+    branches:
+      - master
   pull_request:
   schedule:
     - cron: '0 3 * * *'
