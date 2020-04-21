@@ -31,7 +31,7 @@ import hotel.pages.RoomPage;
 import hotel.pages.TopPage;
 
 @TestMethodOrder(OrderAnnotation.class)
-@DisplayName("宿泊予約画面テスト")
+@DisplayName("宿泊予約")
 class ReserveTest {
 
   private static DateTimeFormatter shortFormatter = DateTimeFormatter.ofPattern("yyyy/MM/dd");
