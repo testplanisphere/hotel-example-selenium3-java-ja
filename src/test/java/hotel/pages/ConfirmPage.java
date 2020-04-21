@@ -83,7 +83,7 @@ public class ConfirmPage {
   }
 
   public void close() {
-    var closeButton = driver.findElement(By.cssSelector("#success-modal > div > div > div > button"));
+    var closeButton = driver.findElement(By.cssSelector("#success-modal > div > div > div > button.btn-success"));
     closeButton.click();
   }
 }
