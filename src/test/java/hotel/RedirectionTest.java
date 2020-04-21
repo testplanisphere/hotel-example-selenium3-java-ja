@@ -1,8 +1,9 @@
 package hotel;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
 import static hotel.Utils.BASE_URL;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import hotel.pages.TopPage;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -14,7 +15,6 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import hotel.pages.TopPage;
 
 @TestMethodOrder(OrderAnnotation.class)
 @DisplayName("リダイレクト")
