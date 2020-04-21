@@ -16,7 +16,7 @@ import org.openqa.selenium.WebDriver;
 import hotel.pages.TopPage;
 
 @TestMethodOrder(OrderAnnotation.class)
-@DisplayName("ログイン画面テスト")
+@DisplayName("ログイン")
 class LoginTest {
 
   private static WebDriver driver;

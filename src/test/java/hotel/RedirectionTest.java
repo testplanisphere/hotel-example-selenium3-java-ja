@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import hotel.pages.TopPage;
 
 @TestMethodOrder(OrderAnnotation.class)
-@DisplayName("リダイレクトテスト")
+@DisplayName("リダイレクト")
 class RedirectionTest {
 
   private static WebDriver driver;
@@ -108,7 +108,7 @@ class RedirectionTest {
 
   @Test
   @Order(7)
-  @DisplayName("未ログインで会員専用プランでトップへリダイレクトすること1")
+  @DisplayName("未ログインで会員専用プランでトップへリダイレクトすること")
   void testMemberOnlyPlanPageToTop() {
     driver.get(BASE_URL + "/reserve.html?plan-id=3");
     wait.until(ExpectedConditions.urlContains("index.html"));
@@ -117,7 +117,7 @@ class RedirectionTest {
 
   @Test
   @Order(8)
-  @DisplayName("未ログインでプレミアム専用プランでトップへリダイレクトすること1")
+  @DisplayName("未ログインでプレミアム専用プランでトップへリダイレクトすること")
   void testPremiumOnlyPlanPageToTop() {
     driver.get(BASE_URL + "/reserve.html?plan-id=1");
     wait.until(ExpectedConditions.urlContains("index.html"));
@@ -126,7 +126,7 @@ class RedirectionTest {
 
   @Test
   @Order(9)
-  @DisplayName("一般会員でプレミアム専用プランでトップへリダイレクトすること1")
+  @DisplayName("一般会員でプレミアム専用プランでトップへリダイレクトすること")
   void testPremiumOnlyPlanNormalMemberPageToTop() {
     driver.get(BASE_URL);
     var topPage = new TopPage(driver);
@@ -141,7 +141,7 @@ class RedirectionTest {
 
   @Test
   @Order(10)
-  @DisplayName("予約画面を経ずに確認画面でトップへリダイレクトすること2")
+  @DisplayName("予約画面を経ずに確認画面でトップへリダイレクトすること")
   void testInvalidParamConfirmPageToTop() {
     driver.get(BASE_URL + "/confirm.html");
     wait.until(ExpectedConditions.urlContains("index.html"));

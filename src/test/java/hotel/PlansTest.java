@@ -16,7 +16,7 @@ import org.openqa.selenium.WebDriver;
 import hotel.pages.TopPage;
 
 @TestMethodOrder(OrderAnnotation.class)
-@DisplayName("プラン一覧画面テスト")
+@DisplayName("プラン一覧")
 class PlansTest {
 
   private static WebDriver driver;

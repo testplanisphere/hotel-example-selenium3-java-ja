@@ -19,7 +19,7 @@ import hotel.pages.SignupPage.Rank;
 import hotel.pages.TopPage;
 
 @TestMethodOrder(OrderAnnotation.class)
-@DisplayName("登録画面テスト")
+@DisplayName("会員登録")
 class SignupTest {
 
   private static WebDriver driver;
