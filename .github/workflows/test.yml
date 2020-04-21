@@ -36,13 +36,13 @@ jobs:
     - name: Grant execute permission for gradlew
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'
       run: chmod +x gradlew
-    - name: Test with Gradle (UN*X)
+    - name: Lint and Test with Gradle (UN*X)
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'
-      run: ./gradlew cleanTest test
+      run: ./gradlew clean check
       env:
         BROWSER: ${{ matrix.browser }}
-    - name: Test with Gradle (Windows)
+    - name: Lint and Test with Gradle (Windows)
       if: matrix.os == 'windows-latest'
-      run: .\gradlew.bat cleanTest test
+      run: .\gradlew.bat clean check
       env:
         BROWSER: ${{ matrix.browser }}
