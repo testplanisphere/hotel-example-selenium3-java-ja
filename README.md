@@ -1,59 +1,59 @@
-## hotel-example-selenium3-java
+# hotel-example-selenium3-java
 
-### テスト対象サイト
+![selenium3-java](https://github.com/testplanisphere/hotel-example-selenium3-java/workflows/selenium3-java/badge.svg)
+
+このプロジェクトはテスト自動化学習のためのサンプルコードです。
+This project is example codes for learning test automation.
+
+### テスト対象 / Test Object
 
 https://hotel.testplanisphere.dev/
 
-### 概要
+### 概要 / Overview
 
-#### フレームワーク
+#### プログラミング言語 / Programming Language
 
-[Selenium WebDriver](https://www.selenium.dev/)
+* Java
 
-#### プログラミング言語
+#### 自動化フレームワーク / Automation Framework
 
-Java
+* [Selenium WebDriver](https://www.selenium.dev/)
 
-#### テスティングフレームワーク
+#### テスティングフレームワーク / Testing Framework
 
-[JUnit 5](https://junit.org/junit5/)
+* [JUnit 5](https://junit.org/junit5/)
 
-#### ビルドツール
+#### ビルドツール / Build Tool
 
-[Gradle](https://gradle.org/)
+* [Gradle](https://gradle.org/)
 
-### 実行方法
+#### 静的解析ツール / Lint Tool
 
-#### 必須環境
+* [Checkstyle](https://checkstyle.sourceforge.io/)
 
-* JDK 11以上
+### 実行方法 / How to Run
+
+#### 必須環境 / Requirements
+
+* JDK 11
 * Google Chrome
 * [ChromeDriver](https://chromedriver.chromium.org/downloads)
 
-Firefoxで実行する場合
+ChromeDriverはダウンロードして環境変数`PATH`の通った場所に置いてください。
+Download Chromedriver and place it in the System `PATH`.
 
-* Mozilla Firefox
-* [geckodriver](https://github.com/mozilla/geckodriver/releases)
+#### テスト・静的解析の実行 / Run Tests and lint
 
-ChromeDriver、geckodriverはダウンロード・展開して環境変数`PATH`の通った場所においてください。
-
-
-#### Windows
+##### Windows
 
 ```
-gradlew.bat cleanTest test
+gradlew.bat clean check
 ```
 
-#### macOS/Linux
+##### macOS/Linux
 
 ```
-./gradlew cleanTest test
-```
-
-#### Firefoxの場合
-
-```
-BROWSER=firefox ./gradlew cleanTest test
+./gradlew clean check
 ```
 
 ### 変更履歴
