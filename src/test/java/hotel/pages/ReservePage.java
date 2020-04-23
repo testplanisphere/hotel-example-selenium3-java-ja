@@ -93,10 +93,20 @@ public class ReservePage {
     emailInput.sendKeys(email);
   }
 
+  public boolean isEmailDisplayed() {
+    var emailInput = driver.findElement(By.id("email"));
+    return emailInput.isDisplayed();
+  }
+
   public void setTel(String tel) {
     var telInput = driver.findElement(By.id("tel"));
     telInput.clear();
     telInput.sendKeys(tel);
+  }
+
+  public boolean isTelDisplayed() {
+    var telInput = driver.findElement(By.id("tel"));
+    return telInput.isDisplayed();
   }
 
   public void setComment(String comment) {
