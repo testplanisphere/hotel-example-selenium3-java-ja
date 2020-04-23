@@ -91,7 +91,21 @@ class ReserveTest {
         () -> assertEquals("お得な特典付きプラン", reservePage.getPlanName()),
         () -> assertEquals(tomorrow, reservePage.getReserveDate()),
         () -> assertEquals("1", reservePage.getReserveTerm()),
-        () -> assertEquals("1", reservePage.getHeadCount())
+        () -> assertEquals("1", reservePage.getHeadCount()),
+        () -> assertFalse(reservePage.isEmailDisplayed()),
+        () -> assertFalse(reservePage.isTelDisplayed())
+    );
+    reservePage.setContact(Contact.メールでのご連絡);
+    assertAll("メール連絡選択時",
+        () -> assertTrue(reservePage.isEmailDisplayed()),
+        () -> assertFalse(reservePage.isTelDisplayed()),
+        () -> assertTrue(reservePage.getEmail().isEmpty())
+    );
+    reservePage.setContact(Contact.電話でのご連絡);
+    assertAll("電話連絡選択時",
+        () -> assertFalse(reservePage.isEmailDisplayed()),
+        () -> assertTrue(reservePage.isTelDisplayed()),
+        () -> assertTrue(reservePage.getTel().isEmpty())
     );
 
     driver.switchTo().frame("room");
@@ -126,9 +140,22 @@ class ReserveTest {
         () -> assertEquals("1", reservePage.getReserveTerm()),
         () -> assertEquals("2", reservePage.getHeadCount()),
         () -> assertEquals("山田一郎", reservePage.getUsername()),
-        () -> assertEquals("ichiro@example.com", reservePage.getEmail()),
+        () -> assertFalse(reservePage.isEmailDisplayed()),
+        () -> assertFalse(reservePage.isTelDisplayed())
+    );
+    reservePage.setContact(Contact.メールでのご連絡);
+    assertAll("メール連絡選択時",
+        () -> assertTrue(reservePage.isEmailDisplayed()),
+        () -> assertFalse(reservePage.isTelDisplayed()),
+        () -> assertEquals("ichiro@example.com", reservePage.getEmail())
+    );
+    reservePage.setContact(Contact.電話でのご連絡);
+    assertAll("電話連絡選択時",
+        () -> assertFalse(reservePage.isEmailDisplayed()),
+        () -> assertTrue(reservePage.isTelDisplayed()),
         () -> assertEquals("01234567891", reservePage.getTel())
     );
+
 
     driver.switchTo().frame("room");
     var roomPage = new RoomPage(driver);
