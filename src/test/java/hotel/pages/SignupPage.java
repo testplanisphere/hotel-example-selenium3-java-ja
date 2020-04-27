@@ -90,9 +90,10 @@ public class SignupPage {
   }
 
   public void setBirthday(LocalDate birthday) {
+    var input = birthday != null ? birthday.toString() : "";
     var birthdayInput = driver.findElement(By.id("birthday"));
     ((JavascriptExecutor) driver)
-        .executeScript("arguments[0].value = arguments[1]", birthdayInput, birthday.toString());
+        .executeScript("arguments[0].value = arguments[1]", birthdayInput, input);
   }
 
   public void setNotification(boolean checked) {

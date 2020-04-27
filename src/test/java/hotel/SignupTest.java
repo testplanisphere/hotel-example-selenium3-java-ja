@@ -78,7 +78,7 @@ class SignupTest {
     signupPage.setAddress("");
     signupPage.setTel("");
     signupPage.setGender(Gender.回答しない);
-    signupPage.setBirthday(LocalDate.parse("2000-01-01"));
+    signupPage.setBirthday(null);
     signupPage.setNotification(false);
     signupPage.goToMyPageExpectingFailure();
 
