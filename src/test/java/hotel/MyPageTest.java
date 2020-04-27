@@ -145,7 +145,7 @@ class MyPageTest {
     var topPage = new TopPage(driver);
 
     var signupPage = topPage.goToSignupPage();
-    signupPage.setEmail("new-user@gmail.com");
+    signupPage.setEmail("new-user@example.com");
     signupPage.setPassword("11111111");
     signupPage.setPasswordConfirmation("11111111");
     signupPage.setUsername("田中花子");
@@ -158,7 +158,7 @@ class MyPageTest {
     var myPage = signupPage.goToMyPage();
 
     assertAll("マイページ表示項目",
-        () -> assertEquals("new-user@gmail.com", myPage.getEmail()),
+        () -> assertEquals("new-user@example.com", myPage.getEmail()),
         () -> assertEquals("田中花子", myPage.getUsername()),
         () -> assertEquals("一般会員", myPage.getRank()),
         () -> assertEquals("神奈川県横浜市港区", myPage.getAddress()),
@@ -177,7 +177,7 @@ class MyPageTest {
     var topPage = new TopPage(driver);
 
     var loginPage = topPage.goToLoginPage();
-    var myPage = loginPage.doLogin("new-user@gmail.com", "11111111");
+    var myPage = loginPage.doLogin("new-user@example.com", "11111111");
     var iconPage = myPage.goToIconPage();
 
     Path file = Paths.get("src", "test", "resources", "dummy.txt");
@@ -194,7 +194,7 @@ class MyPageTest {
     var topPage = new TopPage(driver);
 
     var loginPage = topPage.goToLoginPage();
-    var myPage = loginPage.doLogin("new-user@gmail.com", "11111111");
+    var myPage = loginPage.doLogin("new-user@example.com", "11111111");
     var iconPage = myPage.goToIconPage();
 
     Path file = Paths.get("src", "test", "resources", "240x240_12.png");
@@ -211,7 +211,7 @@ class MyPageTest {
     var topPage = new TopPage(driver);
 
     var loginPage = topPage.goToLoginPage();
-    var myPage = loginPage.doLogin("new-user@gmail.com", "11111111");
+    var myPage = loginPage.doLogin("new-user@example.com", "11111111");
     var iconPage = myPage.goToIconPage();
 
     Path file = Paths.get("src", "test", "resources", "240x240_01.png");
@@ -235,7 +235,7 @@ class MyPageTest {
     var topPage = new TopPage(driver);
 
     var loginPage = topPage.goToLoginPage();
-    var myPage = loginPage.doLogin("new-user@gmail.com", "11111111");
+    var myPage = loginPage.doLogin("new-user@example.com", "11111111");
     myPage.deleteUser();
 
     Alert confirm = wait.until(ExpectedConditions.alertIsPresent());
