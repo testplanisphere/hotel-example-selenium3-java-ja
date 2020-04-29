@@ -58,6 +58,18 @@ gradlew.bat clean check
 
 ### 変更履歴
 
+#### v1.1.0 (2020-04-29)
+
+* [#6](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/6) Github Actionsにpull_requestトリガーを追加
+* [#8](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/8) テスト名を修正
+* [#9](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/9) ConfirmPageのモーダルを閉じるボタンのセレクターを修正
+* [#11](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/11) import文をアルファベット順に修正
+* [#13](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/13) Github ActionsでLintを実行するように修正
+* [#14](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/14) READMEの記述内容を変更
+* [#16](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/16) 連絡手段の変更によるinputの表示切り替えテストを追加
+* [#19](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/19) テストデータのアドレスをexample.comに修正
+* [#20](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/20) 日付入力が空の場合のテストを追加
+
 #### v1.0.0 (2020-04-14)
 
 * 正式リリース
