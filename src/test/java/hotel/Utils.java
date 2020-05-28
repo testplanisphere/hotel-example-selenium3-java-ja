@@ -19,31 +19,11 @@ public class Utils {
 
   public static WebDriver createWebDriver() {
     var githubActions = Boolean.parseBoolean(System.getenv("GITHUB_ACTIONS"));
-    var browser = System.getenv("BROWSER");
-    if (browser == null) {
-      browser = "chrome";
+    var options = new ChromeOptions();
+    if (githubActions) {
+      options.setHeadless(true);
     }
-    WebDriver driver;
-    switch (browser) {
-      case "chrome": {
-        var options = new ChromeOptions();
-        if (githubActions) {
-          options.setHeadless(true);
-        }
-        driver = new ChromeDriver(options);
-        break;
-      }
-      case "firefox": {
-        var options = new FirefoxOptions();
-        if (githubActions) {
-          options.setHeadless(true);
-        }
-        driver = new FirefoxDriver(options);
-        break;
-      }
-      default:
-        throw new RuntimeException(browser + " is not support.");
-    }
+    var driver = new ChromeDriver(options);
     driver.manage().window().setSize(new Dimension(1920, 1080));
     return driver;
   }

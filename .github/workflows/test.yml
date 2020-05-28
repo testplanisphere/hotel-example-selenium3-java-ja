@@ -16,7 +16,6 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        browser: [chrome, firefox]
       fail-fast: false
 
     steps:
@@ -39,10 +38,6 @@ jobs:
     - name: Lint and Test with Gradle (UN*X)
       if: matrix.os == 'ubuntu-latest' || matrix.os == 'macos-latest'
       run: ./gradlew clean check
-      env:
-        BROWSER: ${{ matrix.browser }}
     - name: Lint and Test with Gradle (Windows)
       if: matrix.os == 'windows-latest'
       run: .\gradlew.bat clean check
-      env:
-        BROWSER: ${{ matrix.browser }}
