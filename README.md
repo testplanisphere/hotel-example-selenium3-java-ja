@@ -58,6 +58,16 @@ gradlew.bat clean check
 
 ### 変更履歴
 
+#### v1.2.0 (2020-05-31)
+
+* [#25](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/25) Firefoxサポートを停止
+* [#26](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/26) Dependabotを導入
+* [#27](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/27) Bump junit-jupiter-api from 5.6.0 to 5.6.2
+* [#28](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/28) Bump junit-jupiter-engine from 5.6.0 to 5.6.2
+* [#29](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/29) Github actions/cacheをv2にアップデート
+* [#32](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/32) 未使用のimportを削除
+* [#33](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/33) Gradleを6.4.1にアップデート
+
 #### v1.1.0 (2020-04-29)
 
 * [#6](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/6) Github Actionsにpull_requestトリガーを追加
