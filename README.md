@@ -58,6 +58,10 @@ gradlew.bat clean check
 
 ### 変更履歴
 
+#### v2020.6.0 (2020-06-30)
+
+* [#35](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/35) Bump Gradle from 6.4.1 to 6.5.1
+
 #### v1.2.0 (2020-05-31)
 
 * [#25](https://github.com/testplanisphere/hotel-example-selenium3-java/pull/25) Firefoxサポートを停止
