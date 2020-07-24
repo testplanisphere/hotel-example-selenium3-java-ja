@@ -9,7 +9,7 @@ public class TopPage {
 
   public TopPage(WebDriver driver) {
     this.driver = driver;
-    if (!this.driver.getTitle().equals("HOTEL PLANISPHERE - テスト自動化デモサイト")) {
+    if (!this.driver.getTitle().equals("HOTEL PLANISPHERE - テスト自動化練習サイト")) {
       throw new IllegalStateException("現在のページが間違っています: " + this.driver.getTitle());
     }
   }
