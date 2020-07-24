@@ -1,4 +1,4 @@
-name: selenium3-java
+name: selenium3-java-ja
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
   pull_request:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '30 3 * * *'
 
 jobs:
   test:
