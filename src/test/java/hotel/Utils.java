@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Utils {
 
-  public static final String BASE_URL = "https://hotel.testplanisphere.dev";
+  public static final String BASE_URL = "https://hotel.testplanisphere.dev/ja";
 
   private Utils() {
     throw new AssertionError();
