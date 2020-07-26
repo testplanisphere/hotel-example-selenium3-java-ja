@@ -56,6 +56,13 @@ gradlew.bat clean check
 
 ### 変更履歴
 
+#### v2020.7.0 (2020-07-26)
+
+* [#37](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/37) Update Dependabot config file
+* [#38](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/38) fix site title
+* [#39](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/39) update actions and dependabot
+* [#40](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/40) move to ja site
+
 #### v2020.6.0 (2020-06-30)
 
 * [#35](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/35) Bump Gradle from 6.4.1 to 6.5.1
