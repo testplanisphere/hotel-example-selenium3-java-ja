@@ -56,6 +56,10 @@ gradlew.bat clean check
 
 ### 変更履歴
 
+#### v2020.8.0 (2020-08-30)
+
+* [#42](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/42) Bump Gradle from 6.5.1 to 6.6.1
+
 #### v2020.7.0 (2020-07-26)
 
 * [#37](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/37) Update Dependabot config file
