@@ -56,6 +56,11 @@ gradlew.bat clean check
 
 ### 変更履歴
 
+#### v2020.9.0 (2020-09-30)
+
+* [#44](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/44) Bump junit-jupiter-engine from 5.6.2 to 5.7.0 
+* [#45](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/45) Bump junit-jupiter-api from 5.6.2 to 5.7.0
+
 #### v2020.8.0 (2020-08-30)
 
 * [#42](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/42) Bump Gradle from 6.5.1 to 6.6.1
