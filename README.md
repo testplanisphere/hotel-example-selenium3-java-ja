@@ -1,6 +1,6 @@
 # hotel-example-selenium3-java-ja
 
-![selenium3-java-ja](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/workflows/selenium3-java-ja/badge.svg)
+[![selenium3-java-ja](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/actions/workflows/test.yml/badge.svg)](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/actions/workflows/test.yml)
 
 このプロジェクトはテスト自動化学習のためのサンプルコードです。
 
@@ -55,6 +55,16 @@ gradlew.bat clean check
 ```
 
 ### 変更履歴
+
+#### v2021.2.0 (2021-02-28)
+
+* [#48](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/48) Bump junit-jupiter-api from 5.7.0 to 5.7.1
+* [#49](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/49) Bump junit-jupiter-engine from 5.7.0 to 5.7.1
+* [#50](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/50) Bump Gradle from 6.6.1 to 6.8.2
+* [#51](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/51) Update branch name
+* [#52](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/52) update cache setting
+* [#53](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/53) Remove jcenter
+* [#54](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/pull/54) Bump Gradle from 6.8.2 to 6.8.3
 
 #### v2020.9.0 (2020-09-30)
 
