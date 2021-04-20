@@ -1,3 +1,5 @@
+*This project is archived. You should use [hotel-example-selenium4-java-ja](https://github.com/testplanisphere/hotel-example-selenium4-java-ja).*
+
 # hotel-example-selenium3-java-ja
 
 [![selenium3-java-ja](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/actions/workflows/test.yml/badge.svg)](https://github.com/testplanisphere/hotel-example-selenium3-java-ja/actions/workflows/test.yml)
